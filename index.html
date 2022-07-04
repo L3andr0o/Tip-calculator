@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <title>Tip splitter</title>
+</head>
+<body>
+  <img src="images/logo.svg" class="logo">
+  <div class="container">
+    <div class="content">
+      <form class="form">
+          <div class="first-div">
+            <h2 class="bill">Bill</h2>
+          <label for="amount" class="amountlabel">$</label>
+          <span class="error1"></span>
+          <input type="number" class="amount" id="amount" autocomplete="off" placeholder="0">
+        <div class="percent">
+          <h2 class="select-tip">Select Tip %</h2>
+        <div class="grid">
+          <div class="label first" id="5">5%</div>
+          <div class="label second" id="10">10%</div>
+          <div class="label third" id="15">15%</div>
+          <div class="label fourth" id="25">25%</div>
+          <div class="label fifth" id="50">50%</div>
+          <input type="number" class="custom" placeholder="CUSTOM">
+        </div>
+        </div>
+        <h2 class="numerp">Number of People</h2>
+        <label for="person" class="personlabel"><img src="images/icon-person.svg"></label>
+          <span class="error2"></span>
+          <input type="number" class="person" id="person" placeholder="0">
+          </div>
+        <div class="total">
+          <div class="tip-amount">
+            <h3>Tip Amount</h3>
+            <span class="to-pay">$0.00</span>
+          </div>
+          <div class="total-person">
+            <h3>Total</h3>
+            <span class="perperson">$0.00</span>
+          </div>
+          <button type="submit" class="reset">RESET</button>
+        </div>
+    </div>
+  </div>
+  <script src="jotaese.js"></script>
+</body>
+</html>
